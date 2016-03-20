@@ -10,6 +10,9 @@ router.get('/*', four0four.notFoundMiddleware);
 module.exports = router;
 
 //////////////
+function getContests(req, res, next) {
+    res.status(200).send(data.contests);
+}
 
 function getPeople(req, res, next) {
     res.status(200).send(data.people);
@@ -26,7 +29,4 @@ function getPerson(req, res, next) {
     } else {
         four0four.send404(req, res, 'person ' + id + ' not found');
     }
-}
-function getContests(req, res, next) {
-    res.status(200).send(data.contests);
 }
