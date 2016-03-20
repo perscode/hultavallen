@@ -1,0 +1,31 @@
+<section class="mainbar">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wgreen">
+                    <div ht-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user" ng-repeat="cont in vm.forums">
+                        <h2>{{cont.title}}</h2>
+                        <ul>
+                            <li><h3>Uppgift</h3>{{cont.task}}</li>
+                            <br/>
+                            <li><h3>Fröer</h3></li>
+                                <ul ng-repeat="seed in cont.seeds">
+                                    <li><h4>Namn: </h4>{{seed.name}}</li>
+                                    <li><h4>Typ: </h4>{{seed.type}}</li>
+                                    <li><h4>Beskrivning: </h4>{{seed.description}}</li>
+                                    <li><h4>Odling från frö: </h4>{{seed.cultivation}}</li>
+                                    <br/>
+                                    <hr>
+                                    <br/>
+                                </ul>
+                        </ul>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
