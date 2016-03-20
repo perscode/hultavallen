@@ -8,6 +8,10 @@
     "start": "nodemon src/server/app.js",
     "test": "gulp test"
   },
+  "repository":{
+    "type": "git",
+    "url": "git@github.com:veraksar/hultavallen.git"
+  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
